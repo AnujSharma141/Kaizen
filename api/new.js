@@ -12,10 +12,12 @@ async function latest(){
 		const dom = new JSDOM(item)
 		const desc = {
 			name: dom.window.document.querySelector(".anime_ranking_h3").textContent,
-			rank: dom.window.document.querySelector(".score-label").textContent,	
+			rating: dom.window.document.querySelector(".score-label").textContent,	
 			duration: dom.window.document.querySelector(".information").textContent,
+			link : dom.window.document.querySelector(".hoverinfo_trigger").getAttribute('href'),
 			img:'IMG'
 		}
+		console.log(desc.link)
 		return desc
 	})
 

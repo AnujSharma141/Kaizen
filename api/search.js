@@ -2,7 +2,7 @@ const got = require('got')
 const jsdom = require('jsdom')
 const {JSDOM} = jsdom
 
-async function search(key){
+const search = async key =>{
 	try{
 	const showData = await got(`https://myanimelist.net/search/all?q=${encodeURI(key)}&cat=all`)
 	const data = showData.body	
@@ -12,10 +12,10 @@ async function search(key){
 		const dom = new JSDOM(item)
 		const desc = {
 			name: dom.window.document.querySelector(".fw-b").textContent,
-		}
+			link: dom.window.document.querySelector(".fw-b").getAttribute('href'),
+		}	
 		return desc
 	})
-
 	return {main: map, length: map.length}
 	}
 	catch(error){ 
