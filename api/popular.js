@@ -12,14 +12,13 @@ async function popular(){
 		const dom = new JSDOM(item)
 		const desc = {
 			name: dom.window.document.querySelector(".anime_ranking_h3").textContent,
-			rank: dom.window.document.querySelector(".score-label").textContent,	
-			duration: dom.window.document.querySelector(".information").textContent,
-			img:'IMG'
+			rating: dom.window.document.querySelector(".score-label").textContent,	
+			link : dom.window.document.querySelector(".hoverinfo_trigger").getAttribute('href'),
 		}
 		return desc
 	})
 
-	return {main: map, length: map.length}
+	return map
 	}
 	catch(error){ 
 		return {error:{ message: 'Not Found!' , status: true}}

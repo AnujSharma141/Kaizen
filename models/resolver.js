@@ -1,32 +1,36 @@
 const popular = require('../api/popular')
 const latest = require('../api/new')
 const search = require('../api/search')
-
-let links = [{
-    name: 'Shinjeki No Kyojin',
-    rating: '9.1',
-    duration: 'December 2020 - present'
-  },{
-    name: 'Code Geass',
-    rating: '8.7',
-    duration: 'May 2006 - June 2012'
-  }]
-
-let list = ['Shinjeki No Kyojin', 'Code Geass', 'Jujutsu Kaisen']
-
+const detail = require('../api/details')
+const map = require('../api/map')
   
 const resolver = {
     Query: {
-      latest: () => links,
-      new: () => links,
-      search : () => list,
-      cover : () => 'http://cdn.xyz.com/api/img/snk.jpg'
+      new: () => latest(),
+      popular: () => popular(),
+      search : (_,{key}) => search(key),
+      detail : (_,{link}) => detail(link),
+      map : (_,{link}) => map(link)
     },
     
-    Set: {
+    Set:{
       name: (parent) => parent.name,
       rating: (parent) => parent.rating,
-      duration: (parent) => parent.duration
+      genre: (parent) => parent.genre,
+      description: (parent) => parent.description,
+      image: (parent) => parent.image,
+      episodes: (parent) => parent.episodes
+    },
+
+    Item: {
+      name: (parent) => parent.name,
+      rating: (parent) => parent.rating,
+      link: (parent) => parent.link
+    },
+
+    Unit: {
+      name: (parent) => parent.name,
+      link: (parent) => parent.link
     }
   }
 

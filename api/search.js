@@ -4,9 +4,9 @@ const {JSDOM} = jsdom
 
 const search = async key =>{
 	try{
-	const showData = await got(`https://myanimelist.net/search/all?q=${encodeURI(key)}&cat=all`)
+	const showData = await got(`https://myanimelist.net/anime.php?q=${encodeURI(key)}&cat=anime`)
 	const data = showData.body	
-	const arr = data.split('<div class="list di-t w100">')
+	const arr = data.split('<div class="picSurround">')
 	const filter = arr.slice(1,arr.length-1	)
 	const map = filter.map(item =>{
 		const dom = new JSDOM(item)
@@ -16,7 +16,7 @@ const search = async key =>{
 		}	
 		return desc
 	})
-	return {main: map, length: map.length}
+	return map
 	}
 	catch(error){ 
 		return {error:{ message: 'Not Found!' , status: true}}
