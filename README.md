@@ -1,3 +1,5 @@
+![alt text](https://i.ibb.co/qWLjGzY/screely-1608494547075.png)
+
 # Kaizen
 Anime Data API made with [GraphQL](https://graphql.org/).
 
