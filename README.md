@@ -1,4 +1,4 @@
-![alt text](https://i.ibb.co/qWLjGzY/screely-1608494547075.png)
+![alt text](https://i.ibb.co/MVr3Jd0/kaizen-cover.png)
 
 # Kaizen
 Anime Data API made with [GraphQL](https://graphql.org/).
