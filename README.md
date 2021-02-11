@@ -1,4 +1,6 @@
-# Kaizen
+![alt text](https://i.ibb.co/MVr3Jd0/kaizen-cover.png)
+<hr />
+
 Anime Data API made with [GraphQL](https://graphql.org/).
 
 ## Development
