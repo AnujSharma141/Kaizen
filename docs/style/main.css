@@ -1,4 +1,144 @@
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    margin: 0vw;
+}
+.doc-body{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+.doc-menu{
+    width:17vw;
+    height: 100%;
+    position: fixed;
+    background: #F8F8F8;
+    color: #606060;
+    padding-left: 4.1vw;
+}
+.menu-title{
+    font-weight: 700;
+    font-size: 1.4vw;
+    margin-top: 3.5vw;
+    color: #606060;
+}
+.menu-list{
+    list-style-type:none;
+    margin: 0vw;
+    padding: 0vw;
+}
+.menu-sublist{
+    list-style-type:none;
+    margin: 0vw;
+    padding: 0vw;
+    font-weight: 500;  
+}
+.list-item{
+    font-size: 1.2vw;
+    margin: 2.75vw 0vw;   
+}
+.sublist-item{
+    font-size: 1.1vw;
+    margin: 2.75vw 0vw;   
+}
+
+.doc-cont-area{
+    margin-left: 21vw;
+    width: 78vw;
+    height: 100vw;
+    background: rgb(255, 255, 255);
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-button{
+    background: #FEB9B9;
+    outline: none;
+    border: 0px;
+    margin: 2vw 3vw;
+    color: #fff;
+    font-size: 1.2vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 1vw 1.8vw;
+}
+
+.cont-title{
+    font-size: 4.5vw;
+    margin: 0vw;
+    margin-top: 0vw;
+    margin-left:7vw;
+    color: #606060;
+}
+.cont-subtitle{
+    font-size: 1.5vw;
+    margin: 0vw;
+    margin-top: 1vw;
+    font-weight: 500;
+    margin-bottom: 1vw;
+    margin-left:7vw;
+    color: #BCB9B9;
+}
+.cont-text{
+    font-weight: 300;
+    margin: 0vw;
+    font-size: 1.2vw;
+    margin-top: 2vw;
+    margin-left:7vw;
+    width: 40vw;
+    color: #BCB9B9;
+}
+.cont-note{
+    font-weight: 600;
+    margin: 0vw;
+    font-size: 1.2vw;
+    margin-top: 6vw;
+    margin-left:7vw;
+    width: 40vw;
+    color: #BCB9B9;
+}
+.cont-post{
+    margin-left: 7vw;
+    margin-top: 6vw;
+    color: #BCB9B9;
+}
+.post-title{
+    color: #777777;
+    font-size: 1.7vw;
+}
+.post-text{
+    font-weight: 300;
+    font-size: 1.2vw;
+    width: 40vw;
+}
+
+.cont-subpost{
+    margin-left: 7vw;
+    margin-top: 7vw;
+    color: #BCB9B9;
+}
+.subpost-title{
+    color: #777777;
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+.subpost-text{
+    font-weight: 300;
+    font-size: 1.2vw;
+    width: 40vw;
+}
+.subpost-subtitle{
+    font-weight: 500;
+    font-size: 1.2vw;
+    width: 40vw;
+    color: #FEB9B9;
+}
+.subpost-code{
+    width: 35vw;
+    height: 15vw;
+    background: #373F55;
+    display: flex;
+    border-radius: 0.3vw;
 }
