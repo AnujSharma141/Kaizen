@@ -45,7 +45,7 @@ body{
 .doc-cont-area{
     margin-left: 21vw;
     width: 78vw;
-    height: 100vw;
+    padding-bottom: 6vw;
     background: rgb(255, 255, 255);
 }
 .nav{
@@ -64,7 +64,10 @@ body{
     font-weight: 700;
     padding: 1vw 1.8vw;
 }
-
+.cont-img{
+    margin-left:7vw;
+    margin-bottom: 2vw;
+}
 .cont-title{
     font-size: 4.5vw;
     margin: 0vw;
@@ -87,6 +90,7 @@ body{
     font-size: 1.2vw;
     margin-top: 2vw;
     margin-left:7vw;
+    line-height:39px;
     width: 40vw;
     color: #BCB9B9;
 }
@@ -112,6 +116,7 @@ body{
     font-weight: 300;
     font-size: 1.2vw;
     width: 40vw;
+    line-height: 39px;
 }
 
 .cont-subpost{
@@ -128,6 +133,7 @@ body{
     font-weight: 300;
     font-size: 1.2vw;
     width: 40vw;
+    line-height: 39px;
 }
 .subpost-subtitle{
     font-weight: 500;
