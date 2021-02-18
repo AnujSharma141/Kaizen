@@ -12,7 +12,7 @@ npm start
 ```
 
 ## Documentaion
-Read the docs : [DOCS](https://github.com/AnujSharma141/kaizen)
+Read the docs : [DOCS](https://anujsharma141.github.io/Kaizen/)
 
 ## Technologies Used
 
