@@ -28,7 +28,7 @@
     </div>
     <div class="doc-cont-area">
         <span class="nav">
-            <button class="nav-button" >Contribute</button>
+            <a href="https://github.com/AnujSharma141/Kaizen" class="nav-button">Contribute</a>
         </span>
         <h1 class="cont-title">
             Kaizen
@@ -55,8 +55,7 @@
         <div class="cont-post">
             <a name="schema" class="link-pointer"></a>
             <h2 class="post-title">Schema</h2>
-            <p class="post-text">Senpai is an Open Source API which provides Anime data. Senpai is made with GraphQL and provides flexible endpoints as per the data need. The data is solely taken from myanimewatchlist.com and crawled through web. 
-            </p>
+            <img src="https://i.ibb.co/MGFgDcV/image.png" class="cont-post-img" alt="">
         </div>
 
         <div class="cont-post">
@@ -72,7 +71,7 @@
             <p class="subpost-text">Provide a list of anime matching with the keyword string.</p>
             <h4 class="subpost-subtitle">search(key: String!): [Unit]!</h4>
             <code class="subpost-code">
-                <a class="code-dr">query</a>{ 
+                <a class="code-dr">query </a>{ 
                     <br/>
                     <a class="code-yl">search</a>(<a class="code-dr">key</a> : <a class="code-or">"Hunter x Hunter"</a>){
                         <br/>
@@ -92,9 +91,9 @@
             <p class="subpost-text">Provide a list of anime which are currnty airing.</p>
             <h4 class="subpost-subtitle">new: [Item!]!</h4>
             <code class="subpost-code">
-                <a class="code-dr">query</a>{ 
+                <a class="code-dr">query </a> { 
                     <br/>
-                    <a class="code-yl">new</a>{
+                    <a class="code-yl">new </a>{
                         <br/>
                         <a class="code-bl">name</a> 
                         <br/>
@@ -114,9 +113,9 @@
             <p class="subpost-text">Provide a list of anime which are popular.</p>
             <h4 class="subpost-subtitle">popular: [Item!]!</h4>
             <code class="subpost-code">
-                <a class="code-dr">query</a>{ 
+                <a class="code-dr">query </a>{ 
                     <br/>
-                    <a class="code-yl">popular</a>{
+                    <a class="code-yl">popular </a>{
                         <br/>
                         <a class="code-bl">name</a> 
                         <br/>
@@ -136,9 +135,9 @@
             <p class="subpost-text">Provide a list of highest rated anime.</p>
             <h4 class="subpost-subtitle">rated: [Item!]!</h4>
             <code class="subpost-code">
-                <a class="code-dr">query</a>{ 
+                <a class="code-dr">query </a>{ 
                     <br/>
-                    <a class="code-yl">rated</a>{
+                    <a class="code-yl">rated </a>{
                         <br/>
                         <a class="code-bl">name</a> 
                         <br/>
@@ -158,7 +157,7 @@
             <p class="subpost-text">Provide data of anime whose LINK is passed in request.</p>
             <h4 class="subpost-subtitle">detail(link: String!): Set!</h4>
             <code class="subpost-code">
-                <a class="code-dr">query</a>{ 
+                <a class="code-dr">query </a>{ 
                     <br/>
                     <a class="code-yl">detail</a>(<a class="code-dr">link</a> : <a class="code-or">"https://myanimelist.net/anime/<br />37521/Vinland_Saga"</a>){
                         <br/>
@@ -185,7 +184,7 @@
             <p class="subpost-text">Provide data of anime whose NAME is passed in request. </p>
             <h4 class="subpost-subtitle">map(name: String!): Set!</h4>
             <code class="subpost-code">
-                <a class="code-dr">query</a>{ 
+                <a class="code-dr">query </a>{ 
                     <br/>
                     <a class="code-yl">map</a>(<a class="code-dr">name</a> : <a class="code-or">"Jujutsu Kaisen"</a>){
                         <br/>

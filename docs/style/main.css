@@ -1,8 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin: 0vw;
-    scroll-behavior: smooth;
 }
 .doc-body{
     width:100%;
@@ -62,6 +64,7 @@ body{
     background: #FEB9B9;
     outline: none;
     border: 0px;
+    text-decoration: none;
     margin: 2vw 3vw;
     color: #fff;
     font-size: 1.2vw;
@@ -98,6 +101,10 @@ body{
     line-height:39px;
     width: 40vw;
     color: #BCB9B9;
+}
+.cont-post-img{
+    width: 35vw;
+    margin: 1vw 0vw;
 }
 .text-link{
     color: #FEB9B9;
@@ -155,13 +162,14 @@ body{
     color: #FEB9B9;
 }
 .subpost-code{
-    width: 25vw;
+    width: 26vw;
     color: #f5f5f5;
     font-family: 'Source Code Pro', monospace;
     background: #373F55;
     display: block;
-    padding: 1.5vw 2vw;
+    padding: 1.75vw 3vw;
     padding-left: 2vw;
+    line-height: 32px;
     border-radius: 0.3vw;
 }
 .code-bl{
