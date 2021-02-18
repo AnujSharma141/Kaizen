@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppinswght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css">
     <title>Kaizen</title>
@@ -12,16 +13,16 @@
     <div class="doc-menu">
         <p class="menu-title">Kaizen</p>
         <ul class="menu-list">
-            <li class="list-item">Introduction</li>
-            <li class="list-item">Schema</li>
-            <li class="list-item">Endpoints</li>
+            <li class="list-item"><a href="#introduction" class="link-null">Introduction</a></li>
+            <li class="list-item"><a href="#schema" class="link-null">Schema</a></li>
+            <li class="list-item"><a href="#queries" class="link-null">Queries</a></li>
             <ul class="menu-sublist">
-                <li class="sublist-item">Search</li>
-                <li class="sublist-item">New</li>
-                <li class="sublist-item">Rated</li>
-                <li class="sublist-item">Popular</li>
-                <li class="sublist-item">Details</li>
-                <li class="sublist-item">Map</li>
+                <li class="sublist-item"><a href="#search" class="link-null">Search</a></li>
+                <li class="sublist-item"><a href="#latest" class="link-null">Latest</a></li>
+                <li class="sublist-item"><a href="#popular" class="link-null">Popular</a></li>
+                <li class="sublist-item"><a href="#rated" class="link-null">Rated</a></li>
+                <li class="sublist-item"><a href="#details" class="link-null">Details</a></li>
+                <li class="sublist-item"><a href="#map" class="link-null">Map</a></li>
             </ul>
         </ul>
     </div>
@@ -33,69 +34,177 @@
             Kaizen
         </h1>
         <h2 class="cont-subtitle">Anime Data API</h2>
-        <p class="cont-text">Kaizen is an Open Source API which provides Anime data. Senpai is made with GraphQL and provides flexible endpoints as per the data need. The data is solely taken from myanimewatchlist.com and crawled through web. 
-        </p>
+        <div class="cont-text">Kaizen is an Open Source API which provides Anime data. Kaizen is built over GraphQL and provides flexible endpoints as per the data need. The data is solely taken from 
+            <a class="text-link" href="https://myanimelist.net/">myanimelist.net</a> and crawled through web. 
+        </div>
 
         <h3 class="cont-note">Note : Kaizen is NOT a commercial API</h3>
 
         <div class="cont-post">
+            <a name="introduction" class="link-pointer"></a>
             <h2 class="post-title">Introduction</h2>
-            <p class="post-text">Senpai is an Open Source API which provides Anime data. Senpai is made with GraphQL and provides flexible endpoints as per the data need. The data is solely taken from myanimewatchlist.com and crawled through web. 
+            <p class="post-text">As Kaizen is built over GraphQL, it is advised to have a basic knowledge of how GraphQl client works with different frontend framewrks.
+                <a class="text-link" href="https://www.howtographql.com/">Howtographql</a> is a great source to learn GraphQL.
+            <br />
+            After setting up the GraphQL Client, use the given link as the source.  
+            <br /><br />
+            LINK : <a class="text-link" href="https://apikaizen.herokuapp.com/">https://apikaizen.herokuapp.com/</a>
             </p>
         </div>
 
         <div class="cont-post">
+            <a name="schema" class="link-pointer"></a>
             <h2 class="post-title">Schema</h2>
             <p class="post-text">Senpai is an Open Source API which provides Anime data. Senpai is made with GraphQL and provides flexible endpoints as per the data need. The data is solely taken from myanimewatchlist.com and crawled through web. 
             </p>
         </div>
 
         <div class="cont-post">
-            <h2 class="post-title">Endpoints</h2>
-            <p class="post-text">Senpai is an Open Source API which provides Anime data. Senpai is made with GraphQL and provides flexible endpoints as per the data need.  
+            <a name="queries" class="link-pointer"></a>
+            <h2 class="post-title">Queries</h2>
+            <p class="post-text">Now that you might have learn about schema. Have a look at the available queries.
             </p>
         </div>
 
         <div class="cont-subpost">
+            <a name="search" class="link-pointer"></a>
             <h3 class="subpost-title">Search</h3>
-            <p class="subpost-text">Provide a list of data with matching string of the keyword passed in arguement.</p>
-            <h4 class="subpost-subtitle">http://localhost:3000/api/req/search</h4>
-            <span class="subpost-code"></span>
+            <p class="subpost-text">Provide a list of anime matching with the keyword string.</p>
+            <h4 class="subpost-subtitle">search(key: String!): [Unit]!</h4>
+            <code class="subpost-code">
+                <a class="code-dr">query</a>{ 
+                    <br/>
+                    <a class="code-yl">search</a>(<a class="code-dr">key</a> : <a class="code-or">"Hunter x Hunter"</a>){
+                        <br/>
+                        <a class="code-bl">name</a> 
+                        <br/>
+                        <a class="code-bl">link</a> 
+                        <br/>
+                    }
+                    <br/>
+                }
+            </code>
         </div>
 
         <div class="cont-subpost">
+            <a name="latest" class="link-pointer"></a>
             <h3 class="subpost-title">Latest</h3>
-            <p class="subpost-text">Provide a list of data with matching string of the keyword passed in arguement.</p>
-            <h4 class="subpost-subtitle">http://localhost:3000/api/req/search</h4>
-            <span class="subpost-code"></span>
+            <p class="subpost-text">Provide a list of anime which are currnty airing.</p>
+            <h4 class="subpost-subtitle">new: [Item!]!</h4>
+            <code class="subpost-code">
+                <a class="code-dr">query</a>{ 
+                    <br/>
+                    <a class="code-yl">new</a>{
+                        <br/>
+                        <a class="code-bl">name</a> 
+                        <br/>
+                        <a class="code-bl">link</a>
+                        <br />
+                        <a class="code-bl">rating</a> 
+                        <br/>
+                    }
+                    <br/>
+                }
+            </code>
         </div>
 
         <div class="cont-subpost">
+            <a name="popular" class="link-pointer"></a>
             <h3 class="subpost-title">Popular</h3>
-            <p class="subpost-text">Provide a list of data with matching string of the keyword passed in arguement.</p>
-            <h4 class="subpost-subtitle">http://localhost:3000/api/req/search</h4>
-            <span class="subpost-code"></span>
+            <p class="subpost-text">Provide a list of anime which are popular.</p>
+            <h4 class="subpost-subtitle">popular: [Item!]!</h4>
+            <code class="subpost-code">
+                <a class="code-dr">query</a>{ 
+                    <br/>
+                    <a class="code-yl">popular</a>{
+                        <br/>
+                        <a class="code-bl">name</a> 
+                        <br/>
+                        <a class="code-bl">link</a>
+                        <br />
+                        <a class="code-bl">rating</a> 
+                        <br/>
+                    }
+                    <br/>
+                }
+            </code>
         </div>
 
         <div class="cont-subpost">
+            <a name="rated" class="link-pointer"></a>
             <h3 class="subpost-title">Rated</h3>
-            <p class="subpost-text">Provide a list of data with matching string of the keyword passed in arguement.</p>
-            <h4 class="subpost-subtitle">http://localhost:3000/api/req/search</h4>
-            <span class="subpost-code"></span>
+            <p class="subpost-text">Provide a list of highest rated anime.</p>
+            <h4 class="subpost-subtitle">rated: [Item!]!</h4>
+            <code class="subpost-code">
+                <a class="code-dr">query</a>{ 
+                    <br/>
+                    <a class="code-yl">rated</a>{
+                        <br/>
+                        <a class="code-bl">name</a> 
+                        <br/>
+                        <a class="code-bl">link</a>
+                        <br />
+                        <a class="code-bl">rating</a> 
+                        <br/>
+                    }
+                    <br/>
+                }
+            </code>
         </div>
 
         <div class="cont-subpost">
+            <a name="details" class="link-pointer"></a>
             <h3 class="subpost-title">Details</h3>
-            <p class="subpost-text">Provide a list of data with matching string of the keyword passed in arguement.</p>
-            <h4 class="subpost-subtitle">http://localhost:3000/api/req/search</h4>
-            <span class="subpost-code"></span>
+            <p class="subpost-text">Provide data of anime whose LINK is passed in request.</p>
+            <h4 class="subpost-subtitle">detail(link: String!): Set!</h4>
+            <code class="subpost-code">
+                <a class="code-dr">query</a>{ 
+                    <br/>
+                    <a class="code-yl">detail</a>(<a class="code-dr">link</a> : <a class="code-or">"https://myanimelist.net/anime/<br />37521/Vinland_Saga"</a>){
+                        <br/>
+                        <a class="code-bl">name</a><br/>
+                        <a class="code-bl">episodes</a> 
+                        <br/>
+                        <a class="code-bl">genre</a> 
+                        <br/>
+                        <a class="code-bl">description</a> 
+                        <br/>
+                        <a class="code-bl">image</a> 
+                        <br/>
+                        <a class="code-bl">rating</a> 
+                        <br/>
+                    }
+                    <br/>
+                }
+            </code>
         </div>
 
         <div class="cont-subpost">
-            <h3 class="subpost-title">Map</h3>
-            <p class="subpost-text">Provide a list of data with matching string of the keyword passed in arguement.</p>
-            <h4 class="subpost-subtitle">http://localhost:3000/api/req/search</h4>
-            <span class="subpost-code"></span>
+            <a name="map" class="link-pointer"></a>
+            <h3 class="subpost-title">Map</h3>  
+            <p class="subpost-text">Provide data of anime whose NAME is passed in request. </p>
+            <h4 class="subpost-subtitle">map(name: String!): Set!</h4>
+            <code class="subpost-code">
+                <a class="code-dr">query</a>{ 
+                    <br/>
+                    <a class="code-yl">map</a>(<a class="code-dr">name</a> : <a class="code-or">"Jujutsu Kaisen"</a>){
+                        <br/>
+                        <a class="code-bl">name</a> 
+                        <br/>
+                        <a class="code-bl">episodes</a> 
+                        <br/>
+                        <a class="code-bl">genre</a> 
+                        <br/>
+                        <a class="code-bl">description</a> 
+                        <br/>
+                        <a class="code-bl">image</a> 
+                        <br/>
+                        <a class="code-bl">rating</a> 
+                        <br/>
+                    }
+                    <br/>
+                }
+            </code>
         </div>
     </div>        
 </div>

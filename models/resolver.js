@@ -2,11 +2,13 @@ const popular = require('../api/popular')
 const latest = require('../api/new')
 const search = require('../api/search')
 const detail = require('../api/details')
+const rated = require('../api/rated')
 const map = require('../api/map')
   
 const resolver = {
     Query: {
       new: () => latest(),
+      rated: () => rated(),
       popular: () => popular(),
       search : (_,{key}) => search(key),
       detail : (_,{link}) => detail(link),

@@ -2,6 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin: 0vw;
+    scroll-behavior: smooth;
 }
 .doc-body{
     width:100%;
@@ -36,6 +37,10 @@ body{
 .list-item{
     font-size: 1.2vw;
     margin: 2.75vw 0vw;   
+}
+.link-null{
+    color: #606060;
+    text-decoration: none;
 }
 .sublist-item{
     font-size: 1.1vw;
@@ -94,6 +99,14 @@ body{
     width: 40vw;
     color: #BCB9B9;
 }
+.text-link{
+    color: #FEB9B9;
+    margin: 0vw;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-decoration: none;
+    cursor: pointer;
+}
 .cont-note{
     font-weight: 600;
     margin: 0vw;
@@ -142,9 +155,27 @@ body{
     color: #FEB9B9;
 }
 .subpost-code{
-    width: 35vw;
-    height: 15vw;
+    width: 25vw;
+    color: #f5f5f5;
+    font-family: 'Source Code Pro', monospace;
     background: #373F55;
-    display: flex;
+    display: block;
+    padding: 1.5vw 2vw;
+    padding-left: 2vw;
     border-radius: 0.3vw;
+}
+.code-bl{
+    color: #70c0f5;
+    margin:1vw  2vw;
+    margin-right: 0vw;
+}
+.code-dr{
+    color: #4986d6;
+}
+.code-yl{
+    color: #d8da69;
+}
+
+.code-or{
+    color: #f0b262;
 }

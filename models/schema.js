@@ -2,9 +2,10 @@ module.exports = `
 type Query {
     popular : [Item!]! 
     new : [Item!]!
+    rated : [Item!]!
     search(key: String!) : [Unit]!
     detail(link: String!) : Set!
-    map(link: String!) : Set!
+    map(name: String!) : Set!
   }
 
   type Unit{
