@@ -12,7 +12,7 @@ npm start
 ```
 
 ## Documentaion
-Read the docs : [DOCS](http://apikaizen.herokuapp.com/)
+Read the docs : [DOCS](https://apikaizen.herokuapp.com/)
 
 ## Technologies Used
 
