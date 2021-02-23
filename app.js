@@ -1,17 +1,22 @@
-const {ApolloServer} = require('apollo-server')
-const schema = require('./models/schema')
-const resolver = require('./models/resolver')
+const express = require('express')
+const { ApolloServer } = require('apollo-server-express')
 
-const typeDefs = schema
-const resolvers = resolver
+const typeDefs = require('./models/schema')
+const resolvers = require('./models/resolver')
 
-const server = new ApolloServer({
+const app = express()
+
+ const server = new ApolloServer({
   typeDefs,
-  resolvers,      
+  resolvers,
+  playground:{
+    endpoint:'/api'
+  }
 })
-  
-server
-  .listen(process.env.PORT)
-  .then(({ url }) =>
-    console.log(`Server is running on ${url}`)
-  )
+
+app.use(express.static('docs'))
+server.applyMiddleware({ app, path:'/api'} )
+
+app.listen(process.env.PORT||4000,
+  ()=>{console.log(`Server is running`)
+})
