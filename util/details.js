@@ -1,5 +1,5 @@
-const got = require('got')
-const jsdom = require('jsdom')
+import got from 'got'
+import jsdom from 'jsdom'
 const {JSDOM} = jsdom
 
 const detail = async key =>{
@@ -24,4 +24,4 @@ const detail = async key =>{
 	}
 }
 
-module.exports = detail
+export default detail

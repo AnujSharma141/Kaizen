@@ -1,5 +1,5 @@
-const search = require('./search')
-const detail = require('./details')
+import search from './search'
+import detail from './details'
 
 const map = async function(key){ 
 const res = await search(key)
@@ -8,4 +8,4 @@ const final = await detail(link)
 return final
 }
 
-module.exports = map
+export default map

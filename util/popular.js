@@ -1,14 +1,14 @@
-const got = require('got')
-const jsdom = require('jsdom')
+import got from 'got'
+import jsdom from 'jsdom'
 const {JSDOM} = jsdom
 
-async function rated(){
+async function popular(){
 	try{
-	const showData = await got(`https://myanimelist.net/topanime.php`)
-	const data = showData.body	
+	const scrape = await got(`https://myanimelist.net/topanime.php`)
+	const data = scrape.body	
 	const arr = data.split('<tr class="ranking-list">')
-	const filter = arr.slice(1,arr.length-1	)
-	const map = filter.map(item =>{
+	const filter = arr.slice(1,arr.length-1)
+	const list = filter.map(item =>{
 		const dom = new JSDOM(item)
 		const desc = {
 			name: dom.window.document.querySelector(".anime_ranking_h3").textContent,
@@ -18,11 +18,11 @@ async function rated(){
 		return desc
 	})
 
-	return map
+	return list
 	}
 	catch(error){ 
-		return {error:{ message: 'Not Found!' , status: true}}
+		return {error:{ message: 'Not Found!', status: false}}
 	}
 }
 
-module.exports = rated
+export default popular
