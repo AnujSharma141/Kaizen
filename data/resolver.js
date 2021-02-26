@@ -12,7 +12,7 @@ const resolver = {
       popular: () => popular(),
       search : (_,{key}) => search(key),
       detail : (_,{link}) => detail(link),
-      map : (_,{link}) => map(link)
+      map : (_,{name}) => map(name)
     },
     
     Set:{
@@ -28,6 +28,7 @@ const resolver = {
       name: (parent) => parent.name,
       rating: (parent) => parent.rating,
       link: (parent) => parent.link,
+      image: (parent) => parent.image
     },
 
     Unit: {

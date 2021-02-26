@@ -19,6 +19,7 @@ type Query {
     name: String!
     rating: String!
     link : String!
+    image: String!
   }
 
   type Set{

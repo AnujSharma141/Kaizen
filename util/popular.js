@@ -1,21 +1,15 @@
 import got from 'got'
-import jsdom from 'jsdom'
-const {JSDOM} = jsdom
+import Item from './models/item'
 
 async function popular(){
 	try{
-	const scrape = await got(`https://myanimelist.net/topanime.php`)
+	const scrape = await got(`https://myanimelist.net/topanime.php?type=bypopularity`)
 	const data = scrape.body	
 	const arr = data.split('<tr class="ranking-list">')
 	const filter = arr.slice(1,arr.length-1)
 	const list = filter.map(item =>{
-		const dom = new JSDOM(item)
-		const desc = {
-			name: dom.window.document.querySelector(".anime_ranking_h3").textContent,
-			rating: dom.window.document.querySelector(".score-label").textContent,	
-			link : dom.window.document.querySelector(".hoverinfo_trigger").getAttribute('href'),
-		}
-		return desc
+		const desc = new Item(item)
+		return desc.feed()
 	})
 
 	return list

@@ -67,6 +67,7 @@ body{
     text-decoration: none;
     margin: 2vw 3vw;
     color: #fff;
+    border-radius: 0.4vw;
     font-size: 1.2vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -103,7 +104,7 @@ body{
     color: #BCB9B9;
 }
 .cont-post-img{
-    width: 35vw;
+    width: 42vw;
     margin: 1vw 0vw;
 }
 .text-link{

@@ -1,27 +1,21 @@
 import got from 'got'
-import jsdom from 'jsdom'
-const {JSDOM} = jsdom
+import Item from './models/item'
 
 async function latest(){
 	try{
-	const showData = await got(`https://myanimelist.net/topanime.php?type=airing`)
-	const data = showData.body
+	const scrape = await got(`https://myanimelist.net/topanime.php?type=airing`)
+	const data = scrape.body
 	const arr = data.split('<tr class="ranking-list">')
 	const filter = arr.slice(1,arr.length-1)
-	const map = filter.map(item =>{
-		const dom = new JSDOM(item)
-		const desc = {
-			name: dom.window.document.querySelector(".anime_ranking_h3").textContent,
-			rating: dom.window.document.querySelector(".score-label").textContent,	
-			link : dom.window.document.querySelector(".hoverinfo_trigger").getAttribute('href'),
-		}
-		return desc
+	const list = filter.map(item =>{
+		const desc = new Item(item)
+		return desc.feed()
 	})
 
-	return map
+	return list
 	}
 	catch(error){ 
-		return {error:{ message: 'Not Found!' , status: true}}
+		return {error:{ message: 'Not Found!' , status: false}}
 	}
 }
 
