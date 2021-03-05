@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="80" src="https://i.ibb.co/zbD3j6P/image.png" />
+    <img width="680" src="https://i.ibb.co/zbD3j6P/image.png" />
 </p>
 <hr />
 Anime Data API made with [GraphQL](https://graphql.org/).
