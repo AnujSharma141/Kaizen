@@ -1,4 +1,7 @@
-# Kaizen
+<p align="center">
+    <img alt="Big O(micron) Visualizer" width="80" src="https://ibb.co/J2gY03r" />
+</p>
+<hr />
 Anime Data API made with [GraphQL](https://graphql.org/).
 
 ## Development
