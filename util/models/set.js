@@ -10,6 +10,7 @@ class Item {
         this.rating = this.dom.window.document.querySelector(".score-label").textContent,
         this.genre = this.genres(this.dom),
         this.episodes = this.dom.window.document.querySelector("#curEps").textContent
+        this.trailer = this.dom.window.document.querySelector(".iframe").getAttribute('href')
     }
 
     genres(tag){
@@ -25,7 +26,8 @@ class Item {
             image: this.image,
             description: this.description,
             genre: this.genre,
-            episodes: this.episodes
+            episodes: this.episodes,
+            trailer: this.trailer
         }
     }
 }

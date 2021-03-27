@@ -29,5 +29,6 @@ type Query {
     description: String!
     image: String!
     episodes: String!
+    trailer: String!
   }
 `

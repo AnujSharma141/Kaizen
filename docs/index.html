@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppinswght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="icon" href="./img/icon.png">
     <title>Kaizen</title>
 </head>
 <body>
@@ -160,14 +161,15 @@
         <div class="cont-subpost">
             <a name="details" class="link-pointer"></a>
             <h3 class="subpost-title">Details</h3>
-            <p class="subpost-text">Provide data of anime whose LINK is passed in request.</p>
+            <p class="subpost-text">Provides data of anime of which LINK is requested by.</p>
             <h4 class="subpost-subtitle">detail(link: String!): Set!</h4>
             <code class="subpost-code">
                 <a class="code-dr">query </a>{ 
                     <br/>
                     <a class="code-yl">detail</a>(<a class="code-dr">link</a> : <a class="code-or">"https://myanimelist.net/anime/<br />37521/Vinland_Saga"</a>){
                         <br/>
-                        <a class="code-bl">name</a><br/>
+                        <a class="code-bl">name</a>
+                        <br/>
                         <a class="code-bl">episodes</a> 
                         <br/>
                         <a class="code-bl">genre</a> 
@@ -178,6 +180,8 @@
                         <br/>
                         <a class="code-bl">rating</a> 
                         <br/>
+                        <a class="code-bl">trailer</a> 
+                        <br/>
                     }
                     <br/>
                 }
@@ -187,7 +191,7 @@
         <div class="cont-subpost">
             <a name="map" class="link-pointer"></a>
             <h3 class="subpost-title">Map</h3>  
-            <p class="subpost-text">Provide data of anime whose NAME is passed in request. </p>
+            <p class="subpost-text">Provides data of anime of which NAME is requested by. </p>
             <h4 class="subpost-subtitle">map(name: String!): Set!</h4>
             <code class="subpost-code">
                 <a class="code-dr">query </a>{ 
@@ -205,6 +209,8 @@
                         <a class="code-bl">image</a> 
                         <br/>
                         <a class="code-bl">rating</a> 
+                        <br/>
+                        <a class="code-bl">trailer</a> 
                         <br/>
                     }
                     <br/>

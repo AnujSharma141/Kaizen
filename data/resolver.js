@@ -21,7 +21,8 @@ const resolver = {
       genre: (parent) => parent.genre,
       description: (parent) => parent.description,
       image: (parent) => parent.image,
-      episodes: (parent) => parent.episodes
+      episodes: (parent) => parent.episodes,
+      trailer: (parent) => parent.trailer
     },
 
     Item: {
