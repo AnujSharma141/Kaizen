@@ -1,7 +1,15 @@
-# Kaizen
+<p align="center">
+    <img width="480" src="https://i.ibb.co/jys6QMK/image.png" />
+</p>
+
+#
+
 Anime Data API made with [GraphQL](https://graphql.org/).
 
-## Development
+## :bookmark_tabs: Documentaion
+Read the docs : [DOCS](https://apikaizen.herokuapp.com/)
+
+## :computer: Development
 Run the following commands in terminal to setup the project on your local machine.
 
 ```bash 
@@ -11,10 +19,7 @@ npm install
 npm start
 ```
 
-## Documentaion
-Read the docs : [DOCS](https://apikaizen.herokuapp.com/)
-
-## Technologies Used
+## :rocket: Technologies Used
 
 * NODE (Runtime)
 * EXPRESS (API Framework)
