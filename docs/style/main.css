@@ -1,9 +1,13 @@
+@font-face {
+    font-family: archia;
+    src: url("../assets/fonts/archia-regular-webfont.ttf");
+}
+
 html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-family: archia;
     margin: 0vw;
 }
 .doc-body{
@@ -16,7 +20,7 @@ body{
     height: 100%;
     position: fixed;
     background: #F8F8F8;
-    color: #606060;
+    color: #3b3b3b;
     padding-left: 4.1vw;
 }
 .menu-title{
@@ -31,6 +35,7 @@ body{
     padding: 0vw;
 }
 .menu-sublist{
+    font-weight: 700;
     list-style-type:none;
     margin: 0vw;
     padding: 0vw;
@@ -38,6 +43,7 @@ body{
 }
 .list-item{
     font-size: 1.2vw;
+    font-weight: 700;
     margin: 2.75vw 0vw;   
 }
 .link-null{
@@ -68,32 +74,36 @@ body{
     margin: 2vw 3vw;
     color: #fff;
     border-radius: 0vw;
-    font-size: 1.2vw;
-    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+
     font-weight: 700;
-    padding: 1vw 1.8vw;
+    padding: 1.2vw 1.9vw;
 }
 .cont-img{
     margin-left:7vw;
     margin-bottom: 2vw;
 }
 .cont-title{
-    font-size: 4.5vw;
+
+    font-weight: 700;
+    font-size: 5.25vw;
     margin: 0vw;
     margin-top: 0vw;
     margin-left:7vw;
-    color: #606060;
+    color: #353535;
 }
 .cont-subtitle{
-    font-size: 1.5vw;
+
+    font-weight: 600;
+    font-size: 1.75vw;
     margin: 0vw;
-    margin-top: 1vw;
-    font-weight: 500;
+    margin-top: 2vw;
     margin-bottom: 1vw;
     margin-left:7vw;
-    color: #BCB9B9;
+    color: #535353;
 }
 .cont-text{
+
     font-weight: 300;
     margin: 0vw;
     font-size: 1.2vw;
@@ -101,7 +111,7 @@ body{
     margin-left:7vw;
     line-height:39px;
     width: 40vw;
-    color: #BCB9B9;
+    color: #8a8a8a;
 }
 .cont-post-img{
     width: 42vw;
@@ -122,20 +132,21 @@ body{
     margin-top: 6vw;
     margin-left:7vw;
     width: 40vw;
-    color: #BCB9B9;
+    color: #FEB9B9;
 }
 .cont-post{
     margin-left: 7vw;
     margin-top: 6vw;
-    color: #BCB9B9;
+    color: #8a8a8a;
 }
 .post-title{
-    color: #777777;
+
+    color: #4b4b4b;
     font-size: 1.7vw;
 }
 .post-text{
-    font-weight: 300;
     font-size: 1.2vw;
+
     width: 40vw;
     line-height: 39px;
 }
@@ -143,12 +154,12 @@ body{
 .cont-subpost{
     margin-left: 7vw;
     margin-top: 7vw;
-    color: #BCB9B9;
+    color: #8a8a8a;
 }
 .subpost-title{
-    color: #777777;
+    color: #444444;
     font-size: 1.6vw;
-    font-weight: 500;
+    font-weight: 600;
 }
 .subpost-text{
     font-weight: 300;
@@ -165,8 +176,8 @@ body{
 .subpost-code{
     width: 26vw;
     color: #f5f5f5;
-    font-family: 'Source Code Pro', monospace;
-    background: #373F55;
+    font-family: 'Roboto Mono', monospace;
+    background: #212542;
     display: block;
     padding: 1.75vw 3vw;
     padding-left: 2vw;
@@ -182,9 +193,9 @@ body{
     color: #4986d6;
 }
 .code-yl{
-    color: #d8da69;
+    color: #f0f17f;
 }
 
 .code-or{
-    color: #f0b262;
+    color: #f0a67b;
 }
