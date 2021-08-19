@@ -22,7 +22,7 @@ body::-webkit-scrollbar-thumb{
 }
 .landing-img{
     position: absolute;
-    width: 100%;
+    width: 102%;
     left: -5vw;
     top: -3vw;
     z-index: -1;
@@ -67,19 +67,22 @@ body::-webkit-scrollbar-thumb{
 }
 .tab{
     width: 20vw;
-    border: 1.3px solid #ebebeb;
     margin: 2vw 3vw;
     padding: 3vw 3vw 3vw 4vw;
     border-radius: 1.3vw;
     transition: 0.3s all;
-    
-}
-.tab:hover{
     box-shadow: 0 0 3vw #e7e7e7;
-    border: 1.3px solid transparent;
 }
 .tab-icon{
-    width: 2.2vw;
+    width: 1.65vw;
+    padding: 1vw;
+    border-radius: 3vw;
+}
+.graphql{
+    background: #ffd9ff;
+}
+.opens{
+    background: #ddffd6;
 }
 .tab-title{
     font-size: 2.65vw;
