@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb{
     text-decoration: none;
     margin: 2vw 3vw;
     color: #fff;
-    border-radius: 0.5vw;
+    border-radius: 5vw;
     font-size: 1vw;
 
     font-weight: 400;

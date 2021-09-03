@@ -48,7 +48,7 @@ body::-webkit-scrollbar-thumb{
     background: #FFB89C;
     padding: 1vw 2vw;
     color: #fff;
-    border-radius: 0.7vw;
+    border-radius: 5vw;
     margin-top: 4vw;
     cursor: pointer;
 }
@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb{
     background: #FFB89C;
     padding: 1.2vw 1.9vw;
     color: #fff;
-    border-radius: 0.7vw;
+    border-radius: 5vw;
     margin-top: 3vw;
     cursor: pointer;
 }
