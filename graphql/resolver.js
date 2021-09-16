@@ -1,9 +1,9 @@
-import popular from '../util/popular'
-import latest from '../util/new'
-import search from '../util/search'
-import detail from '../util/details'
-import rated from '../util/rated'
-import map from '../util/map'
+import popular from '../src/popular'
+import latest from '../src/new'
+import search from '../src/search'
+import detail from '../src/details'
+import rated from '../src/rated'
+import map from '../src/map'
   
 const resolver = {
     Query: {
