@@ -3,7 +3,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Arimo', sans-serif;
     margin: 0vw;
 }
 body::-webkit-scrollbar{
@@ -20,16 +20,16 @@ body::-webkit-scrollbar-thumb{
     flex-direction: row;
 }
 .doc-menu{
-    width:17vw;
+    width:15vw;
     height: 100%;
     position: fixed;
     padding-top: 3.5vw;
     color: #222222;
-    padding-left: 4.1vw;
+    padding-left: 7.1vw;
 }
 .menu-title{
-    font-weight: 700;
-    font-size: 1.2vw;
+    font-weight: 600;
+    font-size: 1vw;
     color: #222222;
     text-decoration: none;
 }
@@ -44,10 +44,10 @@ body::-webkit-scrollbar-thumb{
     list-style-type:none;
     margin: 1vw 0;
     padding: 0vw;
-    font-weight: 500;  
+    font-weight: 400;  
 }
 .list-item{
-    font-size: 1. 2vw;
+    font-size: 1vw;
     font-weight: 400;
     margin: 2.75vw 0vw;   
     
@@ -58,33 +58,39 @@ body::-webkit-scrollbar-thumb{
     text-decoration: none;
 }
 .sublist-item{
-    font-size: 1.1vw;
+    font-size: 1vw;
+
     margin: 2.75vw 0vw;   
 }
 
 .doc-cont-area{
-    margin-left: 21vw;
+    margin-left: 18vw;
     width: 78vw;
     padding-bottom: 6vw;
     background: rgb(255, 255, 255);
 }
 .nav{
-    width: 100%;
+    width: 97%;
     display: flex;
     justify-content: flex-end;
 }
 .nav-button{
-    background: #FFB89C;
-    outline: none;
-    border: 0vw;
     text-decoration: none;
-    margin: 2vw 3vw;
+    background: #b19cff;
+    padding: 0.9vw 2vw;
+    font-size: 0.8vw;
     color: #fff;
+    font-weight: 600;
     border-radius: 5vw;
-    font-size: 1vw;
-
-    font-weight: 400;
-    padding: 1.2vw 1.9vw;
+    margin-top: 3vw;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+    box-shadow: 0 0 1vw #f7efff;
+}
+.nav-button:hover{
+    background: #000000;
+    box-shadow: 0 0 1vw rgb(221, 221, 221);
 }
 .cont-img{
     margin-left:7vw;
@@ -113,7 +119,7 @@ body::-webkit-scrollbar-thumb{
 
     font-weight: 300;
     margin: 0vw;
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-top: 2vw;
     margin-left:7vw;
     line-height:39px;
@@ -122,13 +128,14 @@ body::-webkit-scrollbar-thumb{
 }
 .cont-post-img{
     width: 42vw;
+    border-radius: 1vw;
     margin: 1vw 0vw;
 }
 .text-link{
-    color: #FFB89C;
+    color: #b19cff;
     margin: 0vw;
     font-weight: 300;
-    font-size: 1.2vw;
+    font-size: 1vw;
     text-decoration: none;
     cursor: pointer;
 }
@@ -139,7 +146,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: 6vw;
     margin-left:7vw;
     width: 40vw;
-    color: #FFB89C;
+    color: #b19cff;
 }
 .cont-post{
     margin-left: 7vw;
@@ -152,8 +159,8 @@ body::-webkit-scrollbar-thumb{
     font-size: 3.7vw;
 }
 .post-text{
-    font-size: 1.2vw;
-    color: #b4b4b4;
+    font-size: 1vw;
+    color: #cecece;
     width: 43vw;
     line-height: 39px;
 }
@@ -172,17 +179,17 @@ body::-webkit-scrollbar-thumb{
 .subpost-text{
     margin-top: 1vw;
     font-weight: 300;
-    font-size: 1.2vw;
-    color: #b4b4b4;
+    font-size: 1vw;
+    color: #cecece;
     width: 40vw;
     line-height: 39px;
 }
 .subpost-subtitle{
     margin-top: 1vw;
     font-weight: 500;
-    font-size: 1.2vw;
+    font-size: 1vw;
     width: 40vw;
-    color: #FFB89C;
+    color: #b19cff;
 }
 .subpost-code{
     width: 26vw;
@@ -194,7 +201,7 @@ body::-webkit-scrollbar-thumb{
     padding: 1.75vw 3vw;
     padding-left: 2vw;
     line-height: 32px;
-    border-radius: 0.8vw;
+    border-radius: 0.6vw;
 }
 .code-bl{
     color: #70c0f5;

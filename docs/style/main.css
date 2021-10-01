@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Arimo', sans-serif;
     margin: 0vw;
 }
 body::-webkit-scrollbar{
@@ -36,25 +36,47 @@ body::-webkit-scrollbar-thumb{
 }
 .name{
     margin-bottom: 2vw;
-    font-weight: 700;
-    font-size: 0.9vw;
+    font-weight: 600;
+    font-size: 1vw;
 }
 .title{
     font-size: 6vw;
+    font-weight: 700;
     margin: 0;
+    animation: fade 1.3s 1;
+}
+@keyframes fade{
+    0%{
+        margin-top: -3vw;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0vw;
+    }
 }
 .button{
     text-decoration: none;
-    background: #FFB89C;
-    padding: 1vw 2vw;
+    background: #b19cff;
+    padding: 0.9vw 2vw;
+    font-size: 0.8vw;
     color: #fff;
+    font-weight: 500;
     border-radius: 5vw;
     margin-top: 4vw;
     cursor: pointer;
+    transition: all 0.3s;
+    
+    box-shadow: 0 0 1vw #f7efff;
+}
+.button:hover{
+    background: #000000;
+    box-shadow: 0 0 1vw rgb(221, 221, 221);
 }
 .text{
     color: #B7B7B7;
-    font-size: 1.2vw;
+    font-size: 1vw;
+    margin-top: 2vw;
 }
 
 .tabs{
@@ -71,7 +93,9 @@ body::-webkit-scrollbar-thumb{
     padding: 3vw 3vw 3vw 4vw;
     border-radius: 1.3vw;
     transition: 0.3s all;
-    box-shadow: 0 0 3vw #e7e7e7;
+    
+    border: 1px solid #f7efff;
+    box-shadow: 0 0 3.5vw #f7f5ffc9;
 }
 .tab-icon{
     width: 1.65vw;
@@ -91,9 +115,11 @@ body::-webkit-scrollbar-thumb{
 }
 .tab-text{
     cursor:default;
-    color: #B7B7B7;
-    font-size: 1.1vw;
-    line-height: 2.4vw;
+    color: #cecece;
+    width: 18vw;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 2.6vw;
 }
 
 .section{
@@ -109,22 +135,31 @@ body::-webkit-scrollbar-thumb{
 }
 .section-button{
     text-decoration: none;
-    background: #FFB89C;
-    padding: 1.2vw 1.9vw;
+    background: #b19cff;
+    padding: 0.9vw 2vw;
+    font-size: 0.8vw;
     color: #fff;
+    font-weight: 600;
     border-radius: 5vw;
-    margin-top: 3vw;
+    margin-top: 4vw;
     cursor: pointer;
+    transition: all 0.3s;
+    
+    box-shadow: 0 0 1vw #f7efff;
+}
+.section-button:hover{
+    background: #000000;
+    box-shadow: 0 0 1vw rgb(221, 221, 221);
 }
 .section-text{
-    color: #B7B7B7;
-    font-size: 1.2vw;
+    color: #cecece;
+    font-size: 1vw;
     width: 30vw;
-    line-height: 3vw;
+    line-height: 2.7vw;
     text-align: center;
 }
 .section-link{
-    color: #FFB89C;
+    color: #b19cff;
 }
 .credits{
     display: flex;
@@ -132,11 +167,11 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 1vw;
+    font-size: 0.9vw;
     margin: 4vw 0;
 }
 .credits-icon{
-    width: 1.1vw;
+    width: 1vw;
     margin: 0 0.5vw;
     margin-top: 0.7vw;
     margin-bottom: -0.2vw;
@@ -146,8 +181,10 @@ body::-webkit-scrollbar-thumb{
     color: #B7B7B7;
 }
 .credits-name{
-    color: #000;
+    color: rgb(0, 0, 0);
     margin-left: 0.3vw;
+    font-weight: 500;
+    text-decoration: none;
 }.links{
     margin-top: 1vw;
 }
