@@ -3,7 +3,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0vw;
 }
 body::-webkit-scrollbar{
@@ -78,10 +78,10 @@ body::-webkit-scrollbar-thumb{
     text-decoration: none;
     background: #b19cff;
     padding: 0.9vw 2vw;
-    font-size: 0.8vw;
+    font-size: 0.95vw;
     color: #fff;
     font-weight: 600;
-    border-radius: 5vw;
+    border-radius: 0.3vw;
     margin-top: 3vw;
     cursor: pointer;
     transition: all 0.3s;
@@ -124,7 +124,7 @@ body::-webkit-scrollbar-thumb{
     margin-left:7vw;
     line-height:39px;
     width: 40vw;
-    color: #8a8a8a;
+    color: #636363;
 }
 .cont-post-img{
     width: 42vw;
@@ -160,7 +160,7 @@ body::-webkit-scrollbar-thumb{
 }
 .post-text{
     font-size: 1vw;
-    color: #cecece;
+    color: #adadad;
     width: 43vw;
     line-height: 39px;
 }
@@ -180,7 +180,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: 1vw;
     font-weight: 300;
     font-size: 1vw;
-    color: #cecece;
+    color: #adadad;
     width: 40vw;
     line-height: 39px;
 }

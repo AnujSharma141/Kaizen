@@ -1,8 +1,8 @@
-html{
+    html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0vw;
 }
 body::-webkit-scrollbar{
@@ -18,20 +18,20 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     height: 50vw;
     justify-content: center;
-    align-items: center;
+
 }
 .landing-img{
     position: absolute;
-    width: 102%;
-    left: -5vw;
-    top: -3vw;
+    width: 80%;
+    left: 10%;
+    top: 32vw;
     z-index: -1;
 }
 .counter{
     display: flex;
-    margin-top: -5vw;
+    margin-top: 12vw;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .name{
@@ -45,42 +45,34 @@ body::-webkit-scrollbar-thumb{
     margin: 0;
     animation: fade 1.3s 1;
 }
-@keyframes fade{
-    0%{
-        margin-top: -3vw;
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-        margin-top: 0vw;
-    }
-}
+
 .button{
     text-decoration: none;
-    background: #b19cff;
-    padding: 0.9vw 2vw;
-    font-size: 0.8vw;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 5vw;
-    margin-top: 4vw;
+    background: #ffffff;
+    padding: 1.2vw 2vw;
+    font-size: 1vw;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border-radius: 0.8vw;
+    margin-top: 26vw;
     cursor: pointer;
     transition: all 0.3s;
     
-    box-shadow: 0 0 1vw #f7efff;
 }
 .button:hover{
-    background: #000000;
-    box-shadow: 0 0 1vw rgb(221, 221, 221);
+    color: #B675FF;
 }
 .text{
     color: #B7B7B7;
-    font-size: 1vw;
+    font-size: 1.1vw;
     margin-top: 2vw;
+    line-height: 2.3vw;
+    width: 20vw;
+    text-align: center;
 }
 
 .tabs{
-    margin: 10vw 0vw;
+    margin: 35vw 0vw 10vw 0;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -94,8 +86,10 @@ body::-webkit-scrollbar-thumb{
     border-radius: 1.3vw;
     transition: 0.3s all;
     
-    border: 1px solid #f7efff;
-    box-shadow: 0 0 3.5vw #f7f5ffc9;
+    box-shadow: 0 0 3.5vw #ded2ecc9;
+}
+.tab:hover{
+    box-shadow: 0 0 3.5vw #ded2ecc9;
 }
 .tab-icon{
     width: 1.65vw;
@@ -103,7 +97,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 3vw;
 }
 .graphql{
-    background: #ffd9ff;
+    background: #ffeeff;
 }
 .opens{
     background: #ddffd6;
@@ -115,7 +109,7 @@ body::-webkit-scrollbar-thumb{
 }
 .tab-text{
     cursor:default;
-    color: #cecece;
+    color: #b3b3b3;
     width: 18vw;
     font-weight: 400;
     font-size: 1vw;
@@ -136,11 +130,11 @@ body::-webkit-scrollbar-thumb{
 .section-button{
     text-decoration: none;
     background: #b19cff;
-    padding: 0.9vw 2vw;
-    font-size: 0.8vw;
+    padding: 1.2vw 2.5vw;
+    font-size: 1vw;
     color: #fff;
     font-weight: 600;
-    border-radius: 5vw;
+    border-radius: 0.5vw;
     margin-top: 4vw;
     cursor: pointer;
     transition: all 0.3s;

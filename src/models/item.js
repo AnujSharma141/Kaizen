@@ -1,11 +1,11 @@
 import jsdom from "jsdom"
 const {JSDOM} = jsdom
-
+    
 class Item {
     constructor(data){
         this.src = new JSDOM(data)
         this.name = this.src.window.document.querySelector(".anime_ranking_h3").textContent
-        this.link = this.src.window.document.querySelector(".hoverinfo_trigger").getAttribute('href')
+        this.id = this.src.window.document.querySelector(".hoverinfo_trigger").getAttribute('href').replace('https://myanimelist.net/anime/','')
         this.rating = this.src.window.document.querySelector(".score-label").textContent
         this.image = this.img(this.src)
     }
@@ -20,7 +20,7 @@ class Item {
     feed(){
         return{
             name: this.name,
-            link: this.link,
+            id: this.id,
             rating: this.rating,
             image: this.image
         }

@@ -14,8 +14,8 @@ const app = express()
   }
 })
 
-app.use(express.static('docs'))
-server.applyMiddleware({ app, path:'/api'} )
+app.use(express.static('client'))
+server.applyMiddleware({ app, path:'/api'})
 
 app.listen(process.env.PORT||4000,
   ()=>{console.log(`Server is running`)

@@ -1,17 +1,17 @@
-import popular from '../src/popular'
-import latest from '../src/new'
-import search from '../src/search'
-import detail from '../src/details'
-import rated from '../src/rated'
-import map from '../src/map'
+import popular from '../src/queries/popular'
+import airing from '../src/queries/airing'
+import search from '../src/queries/search'
+import detail from '../src/queries/details'
+import rated from '../src/queries/rated'
+import map from '../src/queries/map'
   
 const resolver = {
     Query: {
-      new: () => latest(),
+      airing: () => airing(),
       rated: () => rated(),
       popular: () => popular(),
       search : (_,{key}) => search(key),
-      detail : (_,{link}) => detail(link),
+      detail : (_,{id}) => detail(id),
       map : (_,{name}) => map(name)
     },
     
@@ -28,13 +28,13 @@ const resolver = {
     Item: {
       name: (parent) => parent.name,
       rating: (parent) => parent.rating,
-      link: (parent) => parent.link,
+      id: (parent) => parent.id,
       image: (parent) => parent.image
     },
 
     Unit: {
       name: (parent) => parent.name,
-      link: (parent) => parent.link
+      id: (parent) => parent.id
     }
   }
 

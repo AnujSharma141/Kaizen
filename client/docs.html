@@ -19,7 +19,7 @@
             <li class="list-item"><a href="#queries" class="link-null">Queries</a></li>
             <ul class="menu-sublist">
                 <li class="sublist-item"><a href="#search" class="link-null">Search</a></li>
-                <li class="sublist-item"><a href="#latest" class="link-null">Latest</a></li>
+                <li class="sublist-item"><a href="#latest" class="link-null">Airing</a></li>
                 <li class="sublist-item"><a href="#popular" class="link-null">Popular</a></li>
                 <li class="sublist-item"><a href="#rated" class="link-null">Rated</a></li>
                 <li class="sublist-item"><a href="#details" class="link-null">Details</a></li>
@@ -69,7 +69,7 @@
                         <br/>
                         <a class="code-bl">name</a> 
                         <br/>
-                        <a class="code-bl">link</a> 
+                        <a class="code-bl">id</a> 
                         <br/>
                     }
                     <br/>
@@ -79,17 +79,17 @@
 
         <div class="cont-subpost">
             <a name="latest" class="link-pointer"></a>
-            <h3 class="subpost-title">Latest</h3>
+            <h3 class="subpost-title">Airing</h3>
             <p class="subpost-text">Provide a list of anime which are currnty airing.</p>
-            <h4 class="subpost-subtitle">new: [Item!]!</h4>
+            <h4 class="subpost-subtitle">airing: [Item!]!</h4>
             <code class="subpost-code">
                 <a class="code-dr">query </a> { 
                     <br/>
-                    <a class="code-yl">new </a>{
+                    <a class="code-yl">airing </a>{
                         <br/>
                         <a class="code-bl">name</a> 
                         <br/>
-                        <a class="code-bl">link</a>
+                        <a class="code-bl">id</a>
                         <br />
                         <a class="code-bl">image</a>
                         <br />
@@ -113,7 +113,7 @@
                         <br/>
                         <a class="code-bl">name</a> 
                         <br/>
-                        <a class="code-bl">link</a>
+                        <a class="code-bl">id</a>
                         <br />
                         <a class="code-bl">image</a>
                         <br />
@@ -137,7 +137,7 @@
                         <br/>
                         <a class="code-bl">name</a> 
                         <br/>
-                        <a class="code-bl">link</a>
+                        <a class="code-bl">id</a>
                         <br />
                         <a class="code-bl">image</a>
                         <br />  
@@ -152,12 +152,12 @@
         <div class="cont-subpost">
             <a name="details" class="link-pointer"></a>
             <h3 class="subpost-title">Details</h3>
-            <p class="subpost-text">Provides data of anime of which LINK is requested by.</p>
-            <h4 class="subpost-subtitle">detail(link: String!): Set!</h4>
+            <p class="subpost-text">Provides data of anime of which ID is requested by.</p>
+            <h4 class="subpost-subtitle">detail(id: String!): Set!</h4>
             <code class="subpost-code">
                 <a class="code-dr">query </a>{ 
                     <br/>
-                    <a class="code-yl">detail</a>(<a class="code-dr">link</a> : <a class="code-or">"https://myanimelist.net/anime/<br />37521/Vinland_Saga"</a>){
+                    <a class="code-yl">detail</a>(<a class="code-dr">id</a>: <a class="code-or">"37521/Vinland_Saga"</a>){
                         <br/>
                         <a class="code-bl">name</a>
                         <br/>

@@ -3,22 +3,22 @@ import { gql } from 'apollo-server-express'
 export default gql`
 type Query {
     popular : [Item!]! 
-    new : [Item!]!
+    airing : [Item!]!
     rated : [Item!]!
     search(key: String!) : [Unit]!
-    detail(link: String!) : Set!
+    detail(id: String!) : Set!
     map(name: String!) : Set!
   }
 
   type Unit{
     name: String!
-    link : String!
+    id : String!
   }
 
   type Item{
     name: String!
     rating: String!
-    link : String!
+    id : String!
     image: String!
   }
 

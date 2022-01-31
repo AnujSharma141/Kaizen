@@ -1,10 +1,12 @@
 import got from 'got'
-import Set from './models/set'
+import Set from '../models/set'
+
+const PRE_KEY = 'https://myanimelist.net/anime/'
 
 const detail = async key =>{
 	try{
-	const scrape = await got(key)
-	const data = scrape.body	
+	const raw = await got(PRE_KEY + key)
+	const data = raw.body	
     const desc = new Set(data) 
 	return desc.feed()
 	}
