@@ -4,6 +4,9 @@ import { ApolloServer } from 'apollo-server-express'
 import typeDefs from './graphql/schema'
 import resolvers from './graphql/resolver'
 
+import keys from './src/key'
+import register from './src/register'
+
 const app = express()
 
  const server = new ApolloServer({
@@ -14,7 +17,10 @@ const app = express()
   }
 })
 
-app.use(express.static('client'))
+
+app.use(express.static('docs'))
+app.use("/regitster", register)
+
 server.applyMiddleware({ app, path:'/api'})
 
 app.listen(process.env.PORT||4000,

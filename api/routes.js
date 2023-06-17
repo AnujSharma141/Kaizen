@@ -1,5 +1,0 @@
-//auth
-
-//register
-
-//api-key
