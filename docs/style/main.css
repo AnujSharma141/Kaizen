@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb{
 .landing{
     display: flex;
     width: 100%;
-    height: 28vw;
+    height: 30vw;
     justify-content: center;
 
 }
@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb{
 }
 .counter{
     display: flex;
-    margin-top: 9vw;
+    margin-top: 8vw;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -39,8 +39,15 @@ body::-webkit-scrollbar-thumb{
     font-weight: 600;
     font-size: 1vw;
 }
+.logo{
+    width: 2vw;
+}
+.name{
+    font-size: 1.3vw;
+    font-weight: 700;
+}
 .title{
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: 700;
     margin: 0;
     animation: fade 1.3s 1;
