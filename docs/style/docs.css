@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb{
     padding-left: 7.1vw;
 }
 .menu-title{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1vw;
     color: #222222;
     text-decoration: none;
@@ -77,15 +77,15 @@ body::-webkit-scrollbar-thumb{
 .nav-button{
     text-decoration: none;
     background: #b19cff;
-    padding: 0.9vw 2vw;
-    font-size: 0.95vw;
+    padding: 1.4vw 2.5vw;
+    font-size: 0.8vw;
     color: #fff;
     font-weight: 600;
-    border-radius: 0.3vw;
+    border-radius: 5vw;
     margin-top: 3vw;
     cursor: pointer;
     transition: all 0.3s;
-    
+    text-transform: uppercase;
     box-shadow: 0 0 1vw #f7efff;
 }
 .nav-button:hover{
