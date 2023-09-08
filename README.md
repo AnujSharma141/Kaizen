@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="580" src="https://i.ibb.co/n1GYrNW/image.png" />
+    <img width="320" src="https://gcdnb.pbrd.co/images/kjrlNtgMxvxy.png?o=1" />
 </p>
 
 #
@@ -25,3 +25,4 @@ npm start
 * EXPRESS (API Framework)
 * GRAPHQL (Data Query Language)
 * APOLLO (State Management Library for GraphQL)
+* ESLINT (Linter)
