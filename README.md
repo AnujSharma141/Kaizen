@@ -1,6 +1,3 @@
-<p align="center">
-    <img width="320" src="https://gcdnb.pbrd.co/images/kjrlNtgMxvxy.png?o=1" />
-</p>
 
 #
 
