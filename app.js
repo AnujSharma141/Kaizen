@@ -6,18 +6,19 @@ import resolvers from './graphql/resolver'
 
 const app = express()
 
- const server = new ApolloServer({
+const server = new ApolloServer({
   typeDefs,
   resolvers,
-  playground:{
-    endpoint:'/api'
+  playground: {
+    endpoint: '/api'
   }
 })
 
 app.use(express.static('docs'))
 
-server.applyMiddleware({ app, path:'/api'})
+server.applyMiddleware({ app, path: '/api' })
 
-app.listen(process.env.PORT||4000,
-  ()=>{console.log(`Server is running`)
-})
+app.listen(process.env.PORT || 4000,
+  () => {
+    console.log('Server is running')
+  })
