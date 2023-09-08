@@ -1,5 +1,4 @@
 
-#
 
 Anime Data API made with [GraphQL](https://graphql.org/).
 
