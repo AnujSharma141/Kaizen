@@ -1,11 +1,20 @@
 import express from 'express'
 import { ApolloServer } from 'apollo-server-express'
+import cron from 'node-cron'
+
+import ping from './src/utils/ping'
 
 import typeDefs from './graphql/schema'
 import resolvers from './graphql/resolver'
 
+// cron: self pinging service
+cron.schedule('*/5 * * * * ', () => {
+  ping.handler()
+})
+
 const app = express()
 
+// apollo server middleware
 const server = new ApolloServer({
   typeDefs,
   resolvers,
@@ -14,6 +23,7 @@ const server = new ApolloServer({
   }
 })
 
+// serving documentation pages
 app.use(express.static('docs'))
 
 server.applyMiddleware({ app, path: '/api' })
