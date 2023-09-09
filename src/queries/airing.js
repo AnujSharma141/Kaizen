@@ -1,19 +1,12 @@
-import got from 'got'
-import Item from '../models/item'
-
-const LATEST_URL = 'https://myanimelist.net/topanime.php?type=airing'
+import axios from 'axios'
+import links from '../utils/links'
+import helpers from '../utils/helpers'
 
 async function airing () {
   try {
-    const raw = await got(LATEST_URL)
-    const chunk = raw.body
-    const list = chunk.split('<tr class="ranking-list">')
-    const filter = list.slice(1, list.length - 1)
-    const anime = filter.map(item => {
-      const desc = new Item(item)
-      return desc.feed()
-    })
-    return anime
+    const response = await axios.get(links.AIRING_URL)
+    const data = helpers.fetchAnimeList(response.data)
+    return data
   } catch (error) {
     return { error: { message: 'Not Found!', status: false } }
   }

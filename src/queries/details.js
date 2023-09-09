@@ -1,12 +1,11 @@
-import got from 'got'
 import Set from '../models/set'
-
-const PRE_KEY = 'https://myanimelist.net/anime/'
+import axios from 'axios'
+import links from '../utils/links'
 
 const detail = async key => {
   try {
-    const raw = await got(PRE_KEY + key)
-    const data = raw.body
+    const response = await axios(links.DETAILS_KEY + key)
+    const data = response.data
     const desc = new Set(data)
     return desc.feed()
   } catch (error) {
