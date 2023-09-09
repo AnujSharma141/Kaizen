@@ -76,11 +76,11 @@ body::-webkit-scrollbar-thumb{
 }
 .nav-button{
     text-decoration: none;
-    background: #b19cff;
+    background: #8e6fff;
     padding: 1.4vw 2.5vw;
     font-size: 0.8vw;
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
     border-radius: 5vw;
     margin-top: 3vw;
     cursor: pointer;
@@ -132,7 +132,7 @@ body::-webkit-scrollbar-thumb{
     margin: 1vw 0vw;
 }
 .text-link{
-    color: #b19cff;
+    color: #8e6fff;
     margin: 0vw;
     font-weight: 300;
     font-size: 1vw;
@@ -146,7 +146,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: 6vw;
     margin-left:7vw;
     width: 40vw;
-    color: #b19cff;
+    color: #8e6fff;
 }
 .cont-post{
     margin-left: 7vw;
