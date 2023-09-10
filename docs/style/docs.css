@@ -218,3 +218,232 @@ body::-webkit-scrollbar-thumb{
 .code-or{
     color: #f0a67b;
 }
+
+@media only screen and (max-width: 600px) {
+    
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0vw;
+}
+body::-webkit-scrollbar{
+    width: 0.3vw;
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    background: #979797; 
+
+}
+.doc-body{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20vw;
+}
+.doc-menu{
+    width:0vw !important;
+    height: 100%;
+    position: absolute;
+    padding-top: 10vw;
+    color: #222222;
+    padding-left: 9vw;
+}
+.menu-title{
+    font-weight: 700;
+    font-size: 4vw;
+    color: #222222;
+    text-decoration: none;
+}
+.menu-list{
+    list-style-type:none;
+    margin:5vw 0;
+    display: none;
+    padding: 0vw;
+    
+}
+.menu-sublist{
+    font-weight: 700;
+    list-style-type:none;
+    margin: 1vw 0;
+    padding: 0vw;
+    font-weight: 400;  
+}
+.list-item{
+    font-size: 3vw;
+    font-weight: 400;
+    margin: 5vw 0vw;   
+    
+}
+.link-null{
+
+    color: #222222;
+    text-decoration: none;
+}
+.sublist-item{
+    font-size: 3vw;
+
+    margin: 5vw 0vw;   
+}
+
+.doc-cont-area{
+    margin-left: 2vw;
+    width: 95vw;
+    margin-top: 3vw;
+    padding-bottom: 16vw;
+    margin-bottom: 10vw !important;
+    background: rgb(255, 255, 255);
+}
+.nav{
+    width: 97%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-button{
+    text-decoration: none;
+    background: #8e6fff;
+    padding: 4vw 5vw;
+    font-size: 2.7vw;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 50vw;
+    margin-top: 3vw;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    box-shadow: 0 0 1vw #f7efff;
+}
+.nav-button:hover{
+    background: #000000;
+    box-shadow: 0 0 1vw rgb(221, 221, 221);
+}
+.cont-img{
+    margin-left:7vw;
+    margin-bottom: 2vw;
+}
+.cont-title{
+
+    font-weight: 700;
+    font-size: 7vw ;
+    margin: 0vw;
+    margin-top: 0vw;
+    margin-left:7vw;
+    color: #161616;
+}
+.cont-subtitle{
+
+    font-weight: 600;
+    font-size: 1.75vw;
+    margin: 0vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    margin-left:7vw;
+    color: #2e2e2e;
+}
+.cont-text{
+
+    font-weight: 300;
+    margin: 0vw;
+    font-size: 1vw;
+    margin-top: 2vw;
+    margin-left:7vw;
+    line-height:39px;
+    width: 40vw;
+    color: #636363;
+}
+.cont-post-img{
+    width: 42vw;
+    border-radius: 1vw;
+    margin: 1vw 0vw;
+}
+.text-link{
+    color: #8e6fff;
+    margin: 0vw;
+    font-weight: 300;
+    font-size: 1vw;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cont-note{
+    font-weight: 600;
+    margin: 0vw;
+    font-size: 3vw;
+    margin-top: 6vw;
+    margin-left:7vw;
+    width: 40vw;
+    color: #8e6fff;
+}
+.cont-post{
+    margin-left: 7vw;
+    margin-top: 0vw;
+    color: #8a8a8a;
+}
+.post-title{
+    margin-top: 10vw;
+    color: #1d1d1d;
+    font-size: 9vw;
+}
+.post-text{
+    font-size: 3vw;
+    color: #adadad;
+    width: 73vw;
+    line-height: 39px;
+}
+
+.cont-subpost{
+    margin-left: 7vw;
+    margin-top: 7vw;
+    color: #8a8a8a;
+}
+.subpost-title{
+    color: #2c2c2c;
+    font-size: 8vw !important;
+    font-weight: 600;
+    margin-bottom: 1.5vw;
+}
+.subpost-text{
+    margin-top: 1vw;
+    font-weight: 300;
+    font-size: 3vw;
+    color: #adadad;
+    width: 40vw;
+    line-height: 39px;
+}
+.subpost-subtitle{
+    margin-top: 1vw;
+    font-weight: 500;
+    font-size: 3vw;
+    width: 70vw;
+    color: #b19cff;
+}
+.subpost-code{
+    width: 70vw;
+    color: #f5f5f5;
+    font-family: 'Roboto Mono', monospace;
+    background: #212542;
+    display: block;
+    margin-top: 8vw;
+    padding: 5vw 5vw;
+    font-size: 3vw;
+    padding-left: 4vw;
+    line-height: 7vw;
+    border-radius: 2vw;
+}
+.code-bl{
+    color: #70c0f5;
+    margin:1vw  2vw;
+    margin-right: 0vw;
+}
+.code-dr{
+    color: #4986d6;
+}
+.code-yl{
+    color: #f0f17f;
+}
+
+.code-or{
+    color: #f0a67b;
+}
+
+}
