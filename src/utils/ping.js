@@ -8,7 +8,7 @@ exports.handler = async url => {
         console.log('log: service pinged successfully!')
         resolve({
           statusCode: 200,
-          body: 'service pinged successfully'
+          body: url +  'service pinged successfully!'
         })
       } else {
         reject(
