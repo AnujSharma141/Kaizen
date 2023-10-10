@@ -353,7 +353,7 @@ body::-webkit-scrollbar-thumb{
     color: #636363;
 }
 .cont-post-img{
-    width: 42vw;
+    width: 82vw;
     border-radius: 1vw;
     margin: 1vw 0vw;
 }
@@ -361,7 +361,7 @@ body::-webkit-scrollbar-thumb{
     color: #8e6fff;
     margin: 0vw;
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 3vw;
     text-decoration: none;
     cursor: pointer;
 }

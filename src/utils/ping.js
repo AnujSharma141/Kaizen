@@ -1,7 +1,6 @@
 import https from 'https'
 
-exports.handler = async () => {
-  const url = 'https://kaizen-api-ju41.onrender.com/'
+exports.handler = async url => {
 
   return new Promise((resolve, reject) => {
     const req = https.get(url, (res) => {

@@ -9,7 +9,8 @@ import resolvers from './graphql/resolver'
 
 // cron: self pinging service
 cron.schedule('*/5 * * * * ', () => {
-  ping.handler()
+  ping.handler('https://kaizen-api-ju41.onrender.com/')
+  ping.handler('https://dashboard-2cw8.onrender.com')
 })
 
 const app = express()
