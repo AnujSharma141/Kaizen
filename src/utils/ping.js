@@ -1,14 +1,13 @@
 import https from 'https'
 
 exports.handler = async url => {
-
   return new Promise((resolve, reject) => {
     const req = https.get(url, (res) => {
       if (res.statusCode === 200) {
         console.log('log: service pinged successfully!')
         resolve({
           statusCode: 200,
-          body: url +  'service pinged successfully!'
+          body: url + 'service pinged successfully!'
         })
       } else {
         reject(
