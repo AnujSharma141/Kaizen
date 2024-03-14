@@ -1,6 +1,7 @@
     html{
     scroll-behavior: smooth;
 }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0vw;
@@ -17,7 +18,6 @@ body::-webkit-scrollbar-thumb{
 .landing{
     display: flex;
     flex-direction: column;
-    background: url(../img/background.png);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -35,13 +35,15 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-between;
     align-items: center;
     margin: 4vw 16vw;
-    font-weight: 600;
+    font-weight: 400;
 }
 .nav-menu>a{
     margin-left: 4vw;
     font-weight: 500;
-    font-size: 1vw;
-    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 0.9vw;
+    text-decoration: underline;
+
 }
 .counter-layout{
     display: flex;
@@ -51,7 +53,7 @@ body::-webkit-scrollbar-thumb{
 }
 .counter{
     display: flex;
-    margin-top: 3vw;
+    margin-top: 6vw;
     margin-bottom: 6vw;
     margin-left: 16vw;
     flex-direction: column;
@@ -70,9 +72,10 @@ body::-webkit-scrollbar-thumb{
     font-weight: 700;
 }
 .title{
-    font-size: 5vw;
-    font-weight: 700;
-    width: 26vw;
+    font-size: 3.8vw;
+    font-weight: 600;
+
+    width: 38vw;
     margin: 0;
     margin-top: 0vw;
     animation: fade 1.3s 1;
@@ -82,11 +85,11 @@ body::-webkit-scrollbar-thumb{
     text-decoration: none;
     background: #8e6fff;
     padding: 1.4vw 2.2vw;
-    font-size: 0.8vw;
+    font-size: 0.825vw;
     color: rgb(255, 255, 255);
-    font-weight: 500;
+    font-weight: 300;
     border-radius: 8vw;
-    margin-top: 4vw;
+    margin-top: 3vw;
     cursor: pointer;
     transition: all 0.3s;
     
@@ -95,22 +98,34 @@ body::-webkit-scrollbar-thumb{
     background-color: #000000;
 }
 .text{
-    color: #B7B7B7;
+    color: #9b9b9b;
     font-family: 'Inter';
-    font-size: 0.96vw;
+    font-size: 0.88vw;
+    padding: 0.3vw 1.2vw;
+    background: #f0f0f0;
+
     margin-top: 1vw;
-    line-height: 2vw;
-    width: 18vw;
+
+    width: auto;
+    border-radius: 3vw;
 }
 
+.desc{
+    color: #b6b6b6;
+    font-size: 0.9vw;
+    margin-top: 2vw;
+    font-family: 'Inter';
+}
 .counter-img{
-   width: 26vw;
+   width: 36vw;
    margin-right: 16vw; 
    height: auto;
+   background: transparent;
+   margin-top: 4vh;
 }
 
 .tabs{
-    margin: -4vw 0vw 10vw 0;
+    margin: 4vw 0vw 10vw 0;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -122,14 +137,12 @@ body::-webkit-scrollbar-thumb{
     background: white;
     margin: 2vw 3vw;
     padding: 3vw 3vw 3vw 4vw;
-    border-radius: 1.3vw;
+    border-radius: 0.8vw;
     transition: 0.3s all;
-    
+    border: 1px solid #e4e4e4;
     box-shadow: 0 0 1.5vw #ded2ecc9;
 }
-.tab:hover{
-    box-shadow: 0 0 3.5vw #ded2ecc9;
-}
+
 .tab-icon{
     width: 1.65vw;
     padding: 1vw;
@@ -142,9 +155,10 @@ body::-webkit-scrollbar-thumb{
     background: #ddffd6;
 }
 .tab-title{
-    font-size: 2.65vw;
+    font-size: 2.5vw;
+    font-weight: 600;
     cursor:default;
-    margin: 1.4vw 0 1vw 0;
+    margin: 1.95vw 0 1vw 0;
 }
 .tab-text{
     cursor:default;
@@ -165,20 +179,21 @@ body::-webkit-scrollbar-thumb{
 }
 .section-title{
     font-size: 4vw;
+    font-weight: 600;
     margin: 0;
 }
 .section-button{
     text-decoration: none;
     background: #8e6fff;
     padding: 1.4vw 2.5vw;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     color: #fff;
-    font-weight: 400;
+    font-weight: 300;
     border-radius: 5vw;
     margin-top: 4vw;
     cursor: pointer;
     transition: all 0.3s;
-    text-transform: uppercase;
+
     box-shadow: 0 0 1vw #f7efff;
 }
 .section-button:hover{
@@ -289,7 +304,7 @@ body::-webkit-scrollbar-thumb{
         align-items: center;
     }
     .counter-img{
-        width: 60vw;
+        width: 74vw;
         margin-right: 0vw;
         margin-top: 5vh;
     }
@@ -335,12 +350,17 @@ body::-webkit-scrollbar-thumb{
         font-size: 3vw;
         margin-top: 10vw;
         line-height: 6vw;
-        width: 58vw;
+        width: auto;
+        padding: 0vw 3vw;
         text-align: center;
+    }
+
+    .desc{
+        font-size: 3vw;
     }
     
     .tabs{
-        margin: 16vw 0vw 10vw 0;
+        margin: 300px 0vw 10vw 0;
         width: 100%;
         display: flex;
         flex-direction: column;
